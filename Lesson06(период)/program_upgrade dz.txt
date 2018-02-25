@@ -1,0 +1,27 @@
+(Даны 2 натуральных числа a и b необходимо найти сумму чисел от a до b включительно)
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	cout<<"Введитие числа\n";
+	int a, b, sum=0;
+	cin >> a >> b;
+	if (b<a)
+	{
+		int buf=a;
+		a=b;
+		b=buf;
+	}
+	    for(int i=a; i<=b ;i++)
+		{
+			sum+=i;
+		}
+		cout<< "Сумма ="<<sum << "\n";
+		system("pause");
+	return 0;
+}

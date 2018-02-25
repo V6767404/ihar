@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	cout<<"Введите числа\n";
+	int a, b;
+	cin>>a>>b;
+	int nok;
+	if(a > b)
+	{
+		nok = a;
+	}
+	else
+	{
+		nok=b;
+	}
+	while(nok % a !=0 || nok % b !=0)
+	{
+		nok++;
+	}
+	cout<<"НОК="<< nok <<"\n";
+	system("pause");
+	return 0;
+}

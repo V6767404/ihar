@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	cout <<"Введите два числа\n";
+	int k, i=0;
+	double n, n2;
+	cin >> n >> k;
+	n2 = n * 2;
+	while(n < n2)
+	{ 
+		n += (double)(k*n)/100;
+			i++;
+	}
+	cout<<"Отверт:"<< i <<"\n";
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int pass=2424, countP=3, inputPass;
+	do
+	{
+		cout<<"Введите пароль\n";
+		cin >> inputPass;
+		countP--;
+	}
+	while (pass!=inputPass && countP !=0);
+	if (pass== inputPass)
+	{
+		cout<<"Добро пожаловать в наилучшую и наипрекраснейшую систему\n";
+	}
+	else
+	{
+	cout<<"Незнаешь пароль не суй нос не в свои дела\n";
+	}
+	system("pause");
+	return 0;
+}

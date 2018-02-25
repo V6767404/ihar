@@ -1,0 +1,33 @@
+(найти средне орифметическое чисел массива
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	int A[10];
+	for(int i = 0 ; i < n ; i++)
+	{
+		cout<<"Введите A["<<i<<"]=";
+		cin>>A[i];
+	}
+	cout<<"Массив\n";
+	for(int i = 0 ; i < n ; i++)
+	{
+		cout<<A[i]<<" ";
+	}
+	cout << "\n";
+	int sum=0;
+	for(int i = 1 ; 1 < n ; i++)
+	{
+		sum+=A[i];
+	}
+	sum/n;
+	cout<<"Средне арифметическое="<< sum <<"\n";
+	system("pause");
+	return 0;
+
+}

@@ -1,0 +1,54 @@
+(Найти сумму первых n натуральных чисел)         
+#include "stdafx.h"(Мое неправильное решение))
+#include <iostream>
+using namespace std;
+
+int  Sum(int n);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, sum;
+	cout<<"Введите число:";
+	cin >> n;
+	sum= Sum(n);
+	cout << "Сумма= "<< sum <<"\n";
+	system("pause");
+	return 0;
+}
+ int  Sum(int n)
+ {
+	int sum;
+	for(int i=0; i<n ;i++)
+	{
+		sum+=i;
+	}
+    return sum;
+ }
+
+
+ (правильное решение)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int n);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, sum;
+	cout<<"Введите число:";
+	cin >> n;
+	sum= Sum(n);
+	cout << "Сумма: "<< sum <<"\n";
+	system("pause");
+	return 0;
+}
+ int  Sum(int n)
+ {
+	int c = 0;
+	for(int i = 0 ; i <= n ; i++)
+	{
+		c+=i;
+	}
+    return c;
+ }

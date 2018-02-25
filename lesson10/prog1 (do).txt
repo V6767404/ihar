@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, sum=0;
+	do
+	{
+		cout<<"¬ведите число\n";
+	    cin >> n;
+	    sum+=n;	
+	}
+	while (n!=0);
+	cout<<"—умма равна:"<< sum <<"\n";
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int a, int b);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, c, sum;
+	cout<<"Введите число:";
+	cin >> a;
+	cout<<"Введите число:";
+	cin >> b;
+	sum<(переменная которая хранит значение функции)= Sum(a,b);
+	cout << a << " + " << b << " = " << sum <<"\n";
+	system("pause");
+	return 0;
+}
+ int  Sum(int a, int b)
+ {
+	int c = a + b;
+    return c;
+ }

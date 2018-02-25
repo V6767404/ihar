@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>;
+
+
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL,"Russian");
+	int n;
+	cout << "¬ведите число";
+	cin >> n;
+	int A[10];
+	for(int i = 0; i < 10; i++)
+	{
+	A[i] = 0;
+	}
+	cout <<"¬ведите число\n";
+	cin >> n;
+	while(n > 0)
+	{
+		A[n % 10]++;
+		n/=10;
+	}
+	for(int i = 0; i < 10; i++)
+	{
+		if (A[i] > 0)
+		{
+			cout << i << " - " << A[i] << "раз\n";
+		}
+	}
+	system("pause");
+	return 0;
+}

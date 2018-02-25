@@ -1,0 +1,48 @@
+(найти умножение деление вычитание с помощу функций)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int a, int b);
+int  Raz(int a, int b);
+int  Umn(int a, int b);
+int  Del(int a, int b);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b , c, sum, raz, umn, del;
+	cout<<"Введите число:";
+	cin >> a;
+	cout<<"Введите число:";
+	cin >> b;
+	sum= Sum(a,b);
+	raz= Raz(a,b);
+	umn= Umn(a,b);
+	del= Del(a,b);
+	cout << a << " + " << b << " = " << sum <<"\n";
+	cout << a << " - " << b << " = " << raz <<"\n";
+	cout << a << " * " << b << " = " << umn <<"\n";
+	cout << a << " / " << b << " = " << del <<"\n";
+	system("pause");
+	return 0;
+}
+ int  Sum(int a, int b)
+ {
+	int c = a + b;
+    return c;
+ }
+ int  Raz(int a, int b)
+ {
+	 int c = a - b;
+	 return c;
+ }
+ int  Umn(int a, int b)
+ {
+	 int c = a * b;
+	 return c;
+ }
+ int  Del(int a, int b)
+ {
+	 int c = a / b;
+	 return c;
+ }

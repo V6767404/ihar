@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout<<"Введите число:\n";
+	cin >> n;
+	int r=1 ,newN = 0;
+	do
+	{
+		int temp = n % 10;
+		if (temp != 0 )
+		{
+		newN += r * temp;
+        r*=10;
+	}
+		n/=10;
+	}while(n>0);
+	cout<<"Ответ:"<<newN<<"\n";
+	system("pause");
+	return 0;
+}

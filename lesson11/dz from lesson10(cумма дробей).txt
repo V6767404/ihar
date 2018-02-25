@@ -1,0 +1,55 @@
+(не совсем корректное решение)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	double eps;
+	cout<<"Введите точность\n";
+	cin>>eps;
+	double sum=0;
+	double drob=1;
+	int i=1;
+	do
+	{
+		drob=(double)1/i;
+		sum+=drob;
+		i++;
+	}
+	while(drob>eps);
+	cout<<"Ответ:"<<sum<<"\n";
+	system("pause");
+	return 0;
+}
+
+
+
+(drob В низ)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	double eps;
+	cout<<"Введите точность\n";
+	cin>>eps;
+	double sum=0;
+	double drob=1;
+	int i=1;
+	do
+	{
+		sum+=drob;
+		i++;
+		drob=(double)1/i;
+	}
+	while(drob>eps);
+	cout<<"Ответ:"<<sum<<"\n";
+	system("pause");
+	return 0;
+}

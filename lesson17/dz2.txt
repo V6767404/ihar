@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int a, int b);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, sum;
+	cout<<"¬ведите число:";
+	cin >> n;
+	sum = Sum(n);
+	if(sum==1){
+		cout<<"число не делитс€ на 3";
+	}
+	else{
+        cout<<"число не делитс€ на 3";
+	}
+	system("pause");
+	return 0;
+}
+ int  Sum(int n)
+ {
+	int c=0;
+	if (n % 3==0) { 
+        c+=1;
+	} else {
+        c+=0;
+    return c;
+ }

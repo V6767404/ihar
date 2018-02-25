@@ -1,0 +1,41 @@
+(сократимая и несократимая дроби)
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int NOD(int A, int B);
+void SokrD(int A, int B);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B;
+	cout<<"Введите число A:";
+	cin>>A;
+	cout<<"Введите число B:";
+	cin>>B;
+	SokrD(A,B);
+
+	system("pause");
+	return 0;
+}
+void SokrD(int A, int B)
+{
+	if(NOD(A,B)!=1)
+	{
+	cout<<"Сократимая дробь\n";
+	}
+	else
+	{
+    cout<<"Несократимая дробь\n";
+    }
+}
+int NOD(int A, int B)
+{
+    while(B > 0)
+	{
+		int buf = A % B;
+		A = B;
+		B = buf;
+	}
+	return A;
+}

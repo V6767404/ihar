@@ -1,0 +1,33 @@
+(Дано натуральное число "n" необходимо проверить является ли число совершенным)
+(Число является совершенным если сумма его делителей равна самому этому числу)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  SumDel(int n);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout<<"Введите число:";
+	cin >> n;
+	int sum = SumDel(n);
+	if (sum==n){
+		cout << "Да\n";
+	}
+	else{
+		cout << "Нет\n";
+	}
+	system("pause");
+	return 0;
+}
+ int  SumDel(int n)
+ {
+	int sum = 0;
+    for(int i = 1 ; i <= n/2 ; i++)
+	{
+		if(n%i==0)
+		sum+=i;
+	}
+    return sum;
+ }

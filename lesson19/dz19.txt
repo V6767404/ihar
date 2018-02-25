@@ -1,0 +1,92 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int NODA(int A, int B);
+int NODB(int C, int D);
+//int DrobA(int A, int B);
+//int DrobB(int c, int D);
+//void SokrD(int A, int B);
+void Sum(int A, int B, int C, int D);
+int Drob(int C,int D);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B, C, D;
+	cout<<"Введите число A:";
+	cin>>A;
+	cout<<"Введите число B:";
+	cin>>B;
+	cout<<"Введите число C:";
+	cin>>C;
+	cout<<"Введите число D:";
+	cin>>D;
+	//SokrD(A,B);
+	Sum(A,B,C,D);
+	system("pause");
+	return 0;
+}
+//void SokrD(int A, int B)
+//{
+	//if(NOD(A,B)!=1)
+	//{
+	//cout<<"Сократимая дробь\n";
+	//}
+	//else
+	//{
+    //cout<<"Несократимая дробь\n";
+   // }
+//}
+int NODA(int A, int B)
+{
+   int nod;
+   if(A > B)
+	{
+		nod=B;
+	}
+	else
+	{
+		nod=A;
+	}
+	while(A % nod !=0 || B % nod !=0)
+	{
+		nod--;
+	}
+	A/nod;
+	B/nod;
+	return A,B;
+}
+int NODB(int C, int D)
+{
+   int nod;
+   if(C > D)
+	{
+		nod=C;
+	}
+	else
+	{
+		nod=D;
+	}
+	while(C % nod !=0 || D % nod !=0)
+	{
+		nod--;
+	}
+	C/nod;
+	D/nod;
+	return C,D;
+}
+void Sum(int A, int B, int C, int D)
+{
+	
+	//if(NODA(A,B)==NODB(C,D)
+	if(B==C)
+	{
+		int sum;
+		A+B==sum;
+		cout<<"Сумма дробей равна"<< sum <<"\n";
+	}
+	else
+	{
+		cout<<"Проверка\n";
+	}
+}

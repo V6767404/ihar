@@ -1,0 +1,35 @@
+(Дано натуральное число n ,если число n четное найти  сумму всех четных натуральных чисел от 2 до n, если число n нечетное
+то найти сумму всех нечетных чисел от 1 до n)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	cout<<"Введите число\n";
+	int n , sum=0;
+	cin>>n;
+	if(n%2==0)
+	{
+		for( int i=2; i<=n; i+=2)
+		{
+			sum= sum+i;
+			cout<<"Сумма равна"<<sum<<"\n";
+			system("pause");
+		}
+	}
+	else
+	{
+		for(int i=1;i<=n; i+=2)
+		{
+			sum=sum+i;
+			cout<<"Сумма равна"<<sum<<"\n";
+		system("pause");
+		}
+	}
+
+	
+		return 0;	
+}

@@ -1,0 +1,60 @@
+#include "stdafx.h"
+#include <iostream>;
+
+
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL,"Russian");
+	int n;
+	cout << "Введите число";
+	cin >> n;
+	int a0=0,a1=0,a2=0,a3=0,a4=0,a5=0,a6=0,a7=0,a8=0,a9=0;
+	while( n > 0)
+	{
+		int buf = n% 10;
+		n /=10;
+		if (buf==0)
+			a0++;
+		else if (buf == 1)
+			a1++;
+		else if (buf == 2)
+			a2++;
+		else if (buf == 3)
+			a3++;
+		else if (buf == 4)
+			a4++;
+		else if (buf == 5)
+			a5++;
+		else if (buf == 6)
+			a6++;
+		else if (buf == 7)
+			a7++;
+	    else if (buf == 8)
+			a8++;
+		else if (buf == 9)
+			a9++;
+	}
+	    if (a0 > 0)
+			cout << "0-"<< a0 <<"Раз\n";
+		if (a1 > 0)
+			cout << "1-"<< a1 <<"раз\n"; 
+		if (a2 > 0)
+			cout << "2-"<< a2 <<"раз\n"; 
+		if (a3 > 0)
+			cout << "3-"<< a3 <<"раз\n"; 
+		if (a4 > 0)
+			cout << "4-"<< a4 <<"раз\n"; 
+		if (a5 > 0)
+			cout << "5-"<< a5 <<"раз\n"; 
+		if (a6 > 0)
+			cout << "6-"<< a6 <<"раз\n"; 
+		if (a7 > 0)
+			cout << "7-"<< a7 <<"раз\n"; 
+		if (a8 > 0)
+			cout << "8-"<< a8 <<"раз\n"; 
+		if (a9 > 0)
+			cout << "9-"<< a9 <<"раз\n"; 
+
+	return 0;
+}

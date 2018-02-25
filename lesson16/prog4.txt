@@ -1,0 +1,33 @@
+(необходимо целое число "A" возвести в нвтуральную степень "n")
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int a);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, a, stp;
+	cout<<"¬ведите число:";
+	cin >> a;
+	cout<<"¬ведите число:";
+	cin >> n;
+	stp= Sum(n);
+	cout << "„исло в степени n: "<< stp <<"\n";
+	system("pause");
+	return 0;
+}
+ int  Sum(int a)
+ {
+	int a;
+	int n;
+	int sum;
+	for(int n = a ; n!= 0 ; n+=1)
+	{
+		a*=a;
+		sum+=a;
+		n-=1;
+	}
+    return a;
+ }
+ 

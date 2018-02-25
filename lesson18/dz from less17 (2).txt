@@ -1,0 +1,56 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Nod(int a, int b);
+int  Nok(int a, int b);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, nod, nok;
+	cout<<"Введите число:";
+	cin >> a;
+	cout<<"Введите число:";
+	cin >> b;
+	nod = Nod(a,b);
+	nok = Nok(a,b);
+	cout << "НОД равет"<<nod<<"\n";
+	cout << "НОК равет"<<nok<<"\n";
+	system("pause");
+	return 0;
+}
+ int  Nod(int a, int b)
+ {
+		int nod;
+	if(a > b)
+	{
+		nod=b;
+	}
+	else
+	{
+		nod=a;
+	}
+	while(a % nod !=0 || b % nod !=0)
+	{
+		nod--;
+	}
+    return nod;
+ }
+int  Nok(int a, int b)
+{
+	int nok;
+	if(a > b)
+	{
+		nok=b;
+	}
+	else
+	{
+		nok=a;
+	}
+	while( nok % a !=0 || nok % a !=0)
+	{
+		nok++;
+	}
+    return nok;
+}
+

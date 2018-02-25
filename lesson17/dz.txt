@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  Sum(int a, int b);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n, sum;
+	cout<<"Введите число:";
+	cin >> n;
+	sum<= Sum(n);
+	system("pause");
+	return 0;
+}
+ int  Sum(int n)
+ {
+	if (n % 3==0) { 
+        cout << "Это число меньше делится на 3" <<"\n";
+	} else { // иначе
+        cout << "Это число больше либо равно 10." << "\n";
+	}
+    return n;
+ }

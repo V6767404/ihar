@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void  Sum(int a, int b, int k);
+bool   Nsum(int a, int b, int k);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, sum=0, k;
+	cout<<"¬ведите число:";
+	cin >> a;
+	cout<<"¬ведите число:";
+	cin >> b;
+	cout<<"¬ведите число:";
+	cin >> k;
+	system("pause");
+	return 0;
+}
+ void  Sum(int a, int b, int k)
+ {
+	if((a+b)%k==0)
+	{
+		cout<<"—умма кратна k\n";
+	}
+	else
+	{
+		cout<<"—умма не кратна k\n";
+	}
+ }
+ bool   Nsum(int a, int b, int k)
+ {
+	
+	 if((a+b)%k==0)
+	{
+		n+=1;
+	}
+	 return n;
+

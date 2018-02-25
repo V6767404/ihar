@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int SumDel(int n);
+void SumDelAB(int A, int B);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B;
+	cout<<"Введите число A:";
+	cin>>A;
+	cout<<"Введите число B:";
+	cin>>B;
+	SumDelAB(A,B);
+
+	system("pause");
+	return 0;
+}
+void SumDelAB(int A, int B)
+{
+	int sum=0;
+	for(int i=A; i<=B; i++)
+	{	
+		sum+=SumDel(i);
+	}
+	cout<<"Ответ:"<<sum<<"\n";
+}
+int SumDel(int n)
+{
+    int sum=n+1;
+	for(int i=2; i<=n/2; i++)
+	{
+		if(n % i == 0)
+		{
+			sum+=i;
+		}
+	}
+	return sum;
+}

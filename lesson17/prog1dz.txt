@@ -1,0 +1,32 @@
+(Дано натуральное число "n" проверить является ли число кратно 3 используя признак дилимости на 3)
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int  SumCifr(int n);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout<<"Введите число:";
+	cin >> n;
+	int sum = SumCifr(n);
+	if (sum%3==0){
+		cout << "Да\n";
+	}
+	else{
+		cout << "Нет\n";
+	}
+	system("pause");
+	return 0;
+}
+ int  SumCifr(int n)
+ {
+	int sum = 0;
+	while (n>0)//(способ поиска суммы цифр числа)
+	{
+		sum+=n%10;
+		n/=10;
+	}
+    return sum;
+ }
