@@ -1,18 +1,22 @@
-// урок2 задание 1.cpp: определяет точку входа для консольного приложения.
-//
 
 #include "stdafx.h"
 #include <iostream>
 
+using namespace std;
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int b,n;
-	std::cout<< "Vvedite chisla: \n";
-	std::cin >> n;
-	  b = 10* n;
-	 std::cout<< n <<" cm="<< b << "mm\n";
-	pause;
-	 
+	setlocale(LC_ALL, "Russian");
+
+	cout<<"Р’РІРµРґРёРµ С‡РёСЃР»Рѕ\n";
+	int n;
+	cin>> n;
+
+	for(int i = 0; i < 5 ; i++ )
+	{
+		cout<<"РїСЂРёРІРµС‚!\n";
+	}
+	system("pause");
 	return 0;
 }
