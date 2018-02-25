@@ -1,4 +1,4 @@
-// Lesson5Ex2.cpp: определяет точку входа для консольного приложения.
+// Lesson5Ex2.cpp:
 //
 
 #include "stdafx.h"
