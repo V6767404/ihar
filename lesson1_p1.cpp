@@ -13,7 +13,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int n;
 	cin>> n;
 
-	for(int i = 0; i < 5 ; i++ )
+	for(int i = 0; i < n ; i++ )
 	{
 		cout<<"привет!\n";
 	}
