@@ -1,0 +1,38 @@
+C++ shell
+http://cpp.sh/ 
+
+C++ с нуля
+https://code-live.ru/tag/cpp-manual/
+
+Установка Microsoft Visual Studio 2015 Express (IDE)
+http://purecodecpp.com/archives/96
+
+----------------
+---YOUTUBE------
+
+Уроки Дениса Маркова
+Уроки по С++.1 урок.Как создать программу?
+https://www.youtube.com/watch?v=MOpF5lk3cLY&list=PLbmlzoDQrXVFC13GjpPrJxl6mzTiX65gs	
+
+Уроки C++ с нуля / Урок #1 - Основы
+https://www.youtube.com/watch?v=qSHP98i9mDU
+Изучение C++ в одном видео уроке за час!
+https://www.youtube.com/watch?v=V58rHMUVmDU&t=18s
+
+
+C++ Учим за час урок изучение за одно видео мастер класс программирование на Visual Studio 2017
+https://www.youtube.com/watch?v=f6jeCQeioe4
+
+
+Углубленное программирование на С/С++. Лекция 1
+https://www.youtube.com/watch?v=Hh_zeW2P8uo
+
+Расширенный C++. 1 урок. Денис Марков
+https://www.youtube.com/watch?v=e62f715tql4&list=PLbmlzoDQrXVEsejzpY_cdnh5TrTlwaHQo
+
+
+----------------
+---КНИГИ--------
+C++. Базовый курс. Шилдс	
+https://www.bsuir.by/m/12_100229_1_98220.pdf
+	
