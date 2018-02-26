@@ -1,6 +1,6 @@
 ## Урок1
 
-```json
+```cpp
 
  #include "stdafx.h"
 #include <iostream>
